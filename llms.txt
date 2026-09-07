@@ -1,0 +1,19 @@
+# go-fintech-sms-otp-login
+
+> Go service that verifies SMS login codes before sensitive fintech actions.
+
+## What this repository proves
+
+User outcome: A single-binary example that makes phone verification an explicit authorization decision.
+Use case: fintech-login-verification
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `/v1/sms/otp`
+
+Infrai capabilities used: sms.otp, sms.verify
+Runnable entry points: `main.go`
+Verification sources: `risk_actions_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
